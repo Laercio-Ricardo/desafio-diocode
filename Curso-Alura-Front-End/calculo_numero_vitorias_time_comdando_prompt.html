@@ -1,0 +1,47 @@
+
+<meta charset="UTF-8">
+
+<script>
+//Laércio Ricardo, 22-01-2022, criando funções com javascript e comentando para absorver melhor
+//Aqui eu começo a criar as funções para pular linhas
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+//Termina a função
+
+//Criando as variaveis número de vitorias, empates e numeros de pontos
+var vitorias = parseInt(prompt("Entre com o número de vitorias"))
+var empates = parseInt(prompt("Entre com o número de empates"))
+var pontos = (vitorias * 3) + empates
+// Fim das variaveis
+//Função mostra com a concatenação pontos
+mostra("A pontuação de seu time é:  " + pontos);
+//Se o número de pontos for maior que 28,retorna a mensagem que seu time está melhor
+if(pontos > 28){
+
+    mostra("Seu time está melhor que o ano passado");
+
+}
+//Se o número de pontos for maior que 28,retorna a mensagem que seu time está pior
+
+if(pontos < 28){
+    
+    mostra("Seu time está pior que o ano passado.");
+}
+//Se o número de pontos for maior que 28,retorna a mensagem que seu time está igual
+if(pontos == 28){
+mostra("Seu time está igual que o ano passado.");
+}
+</script>
+
+
+
+
